@@ -23,13 +23,13 @@ class MockNumberTriviaRepository extends Mock
     test(
       'should get trivia from the repository',
       () async {
-        when(mockNumberTriviaRepository.getRandomTrivia())
+        when(mockNumberTriviaRepository.getRandomNumberTrivia())
             .thenAnswer((_) async => Right(tNumberTrivia));
   
         final result = await usecase(NoPramas());
   
         expect(result, Right(tNumberTrivia));
-        verify(mockNumberTriviaRepository.getRandomTrivia());
+        verify(mockNumberTriviaRepository.getRandomNumberTrivia());
       verifyNoMoreInteractions(mockNumberTriviaRepository);
     },
   );
