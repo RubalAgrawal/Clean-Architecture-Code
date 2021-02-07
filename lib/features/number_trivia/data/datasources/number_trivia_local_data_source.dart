@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 import 'dart:convert';
 
 import 'package:clean_code/core/error/exceptions.dart';
 import 'package:clean_code/features/number_trivia/data/models/number_trivia_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:meta/meta.dart';
+=======
+import 'package:clean_code/features/number_trivia/data/models/number_trivia_model.dart';
+>>>>>>> c79a46ab0fd91feff1f81040a86b07afac57d27f
 
 abstract class NumberTriviaLocalDataSource {
   /// Gets the cached [NumberTriviaModel] which was gotten the last time
@@ -13,6 +17,7 @@ abstract class NumberTriviaLocalDataSource {
   Future<NumberTriviaModel> getLastNumberTrivia();
 
   Future<void> cacheNumberTrivia(NumberTriviaModel triviaToCache);
+<<<<<<< HEAD
 }
 
 const CACHED_NUMBER_TRIVIA = 'CACHED_NUMBER_TRIVIA';
@@ -40,3 +45,6 @@ class NumberTriviaLocalDataSourceImpl implements NumberTriviaLocalDataSource {
     );
   }
 }
+=======
+}
+>>>>>>> c79a46ab0fd91feff1f81040a86b07afac57d27f

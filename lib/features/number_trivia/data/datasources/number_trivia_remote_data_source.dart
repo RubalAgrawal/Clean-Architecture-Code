@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import 'dart:convert';
 
 import 'package:clean_code/core/error/exceptions.dart';
@@ -7,6 +8,12 @@ import 'package:http/http.dart' as http;
 
 abstract class NumberTriviaRemoteDataSource {
   /// Calls the http://numbersapi.com/{number} endpoint.
+=======
+import 'package:clean_code/features/number_trivia/data/models/number_trivia_model.dart';
+
+abstract class NumberTriviaRemoteDataSource {
+ /// Calls the http://numbersapi.com/{number} endpoint.
+>>>>>>> c79a46ab0fd91feff1f81040a86b07afac57d27f
   ///
   /// Throws a [ServerException] for all error codes.
   Future<NumberTriviaModel> getConcreteNumberTrivia(int number);
@@ -15,6 +22,7 @@ abstract class NumberTriviaRemoteDataSource {
   ///
   /// Throws a [ServerException] for all error codes.
   Future<NumberTriviaModel> getRandomNumberTrivia();
+<<<<<<< HEAD
 }
 
 class NumberTriviaRemoteDataSourceImpl implements NumberTriviaRemoteDataSource {
@@ -42,3 +50,6 @@ class NumberTriviaRemoteDataSourceImpl implements NumberTriviaRemoteDataSource {
     }
   }
 }
+=======
+}
+>>>>>>> c79a46ab0fd91feff1f81040a86b07afac57d27f
